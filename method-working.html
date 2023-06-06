@@ -58,6 +58,10 @@
                             <input class="form-check-input" type="radio" name="gender" id="female" value="female">
                             <label class="form-check-label" for="female">Female</label>
                         </div>
+                        <div class="form-check d-flex">
+                            <input class="form-check-input" type="radio" name="gender" id="Other" value="Other">
+                            <label class="form-check-label" for="Other">Other</label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,7 +77,7 @@
                 <th>Name</th>
                 <th>Email</th>
                 <th>contact</th>
-                <th>Date of Birth</th>
+                <th>Birth year</th>
                 <th>Gender</th>
             </tr>
             <tbody id="record" class="text-center">
@@ -85,7 +89,7 @@
                 <th>Name</th>
                 <th>Email</th>
                 <th>contact</th>
-                <th>Date of Birth</th>
+                <th>Birth year</th>
                 <th>Gender</th>
             </tr>
             <tbody id="birthrecord" class="text-center"></tbody>
@@ -242,7 +246,7 @@
                                     <td>${val.name}</td>
                                     <td>${val.email}</td> 
                                     <td>${val.phone}</td>
-                                    <td>${val.d_o_b}</td>
+                                    <td>${val.d_o_b.year}</td>
                                     <td>${val.gender}</td>
                                 </tr>
                                `;
@@ -262,7 +266,7 @@
                                     <td>${val.name}</td>
                                     <td>${val.email}</td> 
                                     <td>${val.phone}</td> 
-                                    <td>${val.d_o_b}</td>
+                                    <td>${val.d_o_b.year}</td>
                                     <td>${val.gender}</td>
                                 </tr>
                                `;
